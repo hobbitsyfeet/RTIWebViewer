@@ -94,6 +94,22 @@ change on the fly to load new RTI (ptm) images. That would look something like t
 
 	script.innerHTML = `createRtiViewer("viewerContainer", "${this.props.rti}", 900, 600);`
 
+
+Once this is complete, you need to add the component to App.js, looking like so:
+
+import RTIViewer from "./components/RTIViewer"
+
+	export default class App extends Component {
+	  render() {
+	    return (
+
+		<div className="App">
+		  <RTIViewer/>
+		</div>
+	    )
+	  }
+	}
+
 == ACKNOWLEDGEMENT =======================================================================
 If you use the viewer in your site please send me an email (gianpaolo.palma@isti.cnr.it)
 with the link of your site. 
