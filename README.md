@@ -56,7 +56,7 @@ of viewer.html into React js's Index.html. This acts as a replacement for Import
 the Javascript functions and CSS to be accessed anywhere in the project such as CreateRtiViewer(). 
 It will look like this in index.html under Public/:
 
-	<head>
+	<body>
     		<link type="text/css" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="Stylesheet">
 		<link type="text/css" href="css/webrtiviewer.css" rel="Stylesheet">
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
@@ -65,7 +65,7 @@ It will look like this in index.html under Public/:
 		
 		<script type="text/javascript" src="spidergl/spidergl.js"></script>
 		<script type="text/javascript" src="spidergl/multires.js"></script>
-	</head>
+	</body>
 
 Often, a component will be created independent of other project components. We created a
 default class extending component and defininf a ComponentDidMount which runs the component when it
